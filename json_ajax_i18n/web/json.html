@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        let jsonObj = {
+            "key1": 12,
+            "key2": "abc",
+            "key3": true,
+            "key4": [11, "arr", false],
+            "key5": {
+                "key5_1": 551,
+                "key5_2": "value52"
+            },
+            "key6": [{
+                "key6_1_1": 6611,
+                "key6_1_2": "value612",
+            }, {
+                "key6_2_1": 6621,
+                "key6_2_2": "value622",
+            }]
+        };
+        // alert(typeof jsonObj)
+        // alert(jsonObj.key1)
+        // alert(jsonObj.key4)
+        // alert(jsonObj.key5.key5_2)
+
+        // for (let i = 0; i < jsonObj.key6.length; i++) {
+        //     let jsonItem = jsonObj.key6[i];
+        // }
+
+        // let a = [1,2,[3,4,[5,6],7,8],[9,10],11];
+        // alert(a[3])
+        // alert(a.toString().split(",")[3])
+
+        alert(jsonObj);
+        let jsonObjString = JSON.stringify(jsonObj);
+        alert(jsonObjString);
+    </script>
+</head>
+<body>
+阿松大
+</body>
+</html>

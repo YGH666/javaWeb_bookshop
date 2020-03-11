@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+
+        };
+
+        function ajaxRequest() {
+            let xmlHttpRequest = new XMLHttpRequest();
+
+            xmlHttpRequest.open("get","http://localhost:8080/json_ajax_i18n/ajaxServlet?action=JSAjax",true);
+
+            xmlHttpRequest.onreadystatechange = function () {
+                if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200){
+                    let jsonObj = JSON.parse(xmlHttpRequest.responseText);
+                    document.getElementById("ans").innerHTML = "编号："+jsonObj.id+"姓名："+jsonObj.name;
+                }
+            };
+            xmlHttpRequest.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ajaxRequest()">ajax request</button>
+    <div id="ans">
+
+    </div>
+</body>
+</html>

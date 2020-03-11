@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="http://localhost:8080/cookie_session/">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <iframe name="target" width="500" height="500" style="border: 1px solid black"></iframe>
+    <div>
+        <ul>
+            <li><a href="cookieServlet?action=createCookie" target="target">Cookie的创建</a></li>
+            <li><a href="cookieServlet?action=getCookie" target="target">Cookie的获取</a></li>
+            <li><a href="cookieServlet?action=updateCookie" target="target">Cookie的更新</a></li>
+            <li><a href="cookieServlet?action=testPath" target="target">带Path的Cookie创建</a></li>
+        </ul>
+    </div>
+</body>
+</html>

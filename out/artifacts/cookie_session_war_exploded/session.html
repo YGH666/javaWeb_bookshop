@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="http://localhost:8080/cookie_session/">
+</head>
+<body>
+<iframe name="target" width="500" height="500" style="border: 1px solid black"></iframe>
+<div>
+    <ul style="top:50px;right:20%;position:absolute;">
+        <li><a href="sessionServlet?action=createOrGet" target="target">Session的创建和获取</a></li>
+        <li><a href="sessionServlet?action=setAttribute" target="target">Session域数据的存储</a></li>
+        <li><a href="sessionServlet?action=getAttribute" target="target">Session域数据的获取</a></li>
+        <li><a href="sessionServlet?action=getTimeOut" target="target">Session默认超时时长的获取</a></li>
+    </ul>
+</div>
+</body>
+</html>

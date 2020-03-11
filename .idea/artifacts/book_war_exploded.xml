@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="book:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/book_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="book/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="book" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="book_lib" />
+          <element id="library" level="project" name="kaptcha-2.3.2" />
+          <element id="library" level="project" name="commons-logging-1.1.1" />
+          <element id="library" level="project" name="taglibs-standard-spec-1.2.5 (2)" />
+          <element id="library" level="project" name="commons-collections-3.2.1" />
+          <element id="library" level="project" name="filters-2.0.235-1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
